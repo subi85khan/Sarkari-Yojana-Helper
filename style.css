@@ -149,3 +149,39 @@ h1 {
   margin: 20px 0 15px;
   font-size: 21px;
 }
+.updates-box {
+  background: white;
+  padding: 20px;
+  margin-bottom: 22px;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.updates-box h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.update-item {
+  background: #f8fafc;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border-left: 4px solid #2563eb;
+}
+
+.update-item:last-child {
+  margin-bottom: 0;
+}
+
+.update-item strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.update-item p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.5;
+}
