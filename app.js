@@ -191,7 +191,26 @@ function showDetails(type) {
       "🔗 NFSA Official Website"
     );
   }
-}
+  if (type === "scholarship") {
+    title.innerText = "🎓 Student Scholarship";
+
+    text.innerText =
+      "Students के लिए केंद्र और राज्य सरकार की अलग-अलग scholarship और education schemes उपलब्ध हैं।";
+
+    eligibility.innerText =
+      "Eligibility scholarship, class/course, family income, category और संबंधित government rules के अनुसार अलग हो सकती है।";
+
+    documents.innerText =
+      "Aadhaar, income certificate, domicile, caste certificate और school/college documents जरूरत के अनुसार मांगे जा सकते हैं।";
+
+    apply.innerText =
+      "अपने राज्य के official scholarship portal पर जाकर उपलब्ध scholarships और application process check करें।";
+
+    addLink(
+      "https://scholarships.gov.in/",
+      "🔗 National Scholarship Portal"
+    );
+  }}
 
 function addLink(url, text) {
   const link = document.createElement("a");
