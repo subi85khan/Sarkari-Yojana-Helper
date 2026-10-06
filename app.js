@@ -1,4 +1,4 @@
-const search = document.getElementById("search");
+ const search = document.getElementById("search");
 const cards = document.querySelectorAll(".card");
 
 search.addEventListener("input", function () {
@@ -25,26 +25,69 @@ function showDetails(type) {
 
   apply.innerHTML = "";
 
-  if (type === "awas") {
-  title.innerText = "🏠 PM Awas Yojana";
+  if (type === "pmkisan") {
+    title.innerText = "🌾 PM Kisan Samman Nidhi";
 
-  text.innerText =
-    "PM Awas Yojana के अंतर्गत eligible beneficiaries को housing support से जुड़ी सरकारी सहायता उपलब्ध है।";
+    text.innerText =
+      "PM-KISAN के तहत eligible landholding farmer families को ₹6,000 प्रति वर्ष 3 बराबर किस्तों में DBT के जरिए दिया जाता है।";
 
-  eligibility.innerText =
-    "Eligibility beneficiary की category, income, existing house और संबंधित government rules पर depend करती है।";
+    eligibility.innerText =
+      "Eligible landholding farmer families scheme के नियमों के अनुसार लाभ ले सकती हैं।";
 
-  documents.innerText =
-    "आवश्यक documents application category और local authority के current rules के अनुसार अलग हो सकते हैं।";
+    documents.innerText =
+      "Aadhaar, bank account details और scheme में मांगी गई आवश्यक जानकारी/दस्तावेज।";
 
-  apply.innerHTML =
-    "Official PMAY-U website पर eligibility और application process check करें।";
+    apply.innerText =
+      "Official PM-KISAN website पर New Farmer Registration और e-KYC की सुविधा उपलब्ध है।";
 
-  addLink(
-    "https://pmaymis.gov.in/",
-    "🔗 PM Awas Yojana Official Website"
-  );
+    addLink(
+      "https://pmkisan.gov.in/",
+      "🔗 PM Kisan Official Website"
+    );
   }
+
+  if (type === "awas") {
+    title.innerText = "🏠 PM Awas Yojana";
+
+    text.innerText =
+      "PM Awas Yojana के अंतर्गत eligible beneficiaries को housing support से जुड़ी सरकारी सहायता उपलब्ध है।";
+
+    eligibility.innerText =
+      "Eligibility beneficiary की category, income, existing house और संबंधित government rules पर depend करती है।";
+
+    documents.innerText =
+      "आवश्यक documents application category और local authority के current rules के अनुसार अलग हो सकते हैं।";
+
+    apply.innerText =
+      "Official PMAY-U website पर eligibility और application process check करें।";
+
+    addLink(
+      "https://pmaymis.gov.in/",
+      "🔗 PM Awas Yojana Official Website"
+    );
+  }
+
+  if (type === "mahila") {
+    title.innerText = "👩 महिला योजनाएँ";
+
+    text.innerText =
+      "महिलाओं के लिए सरकार की कई योजनाएँ उपलब्ध हैं।";
+
+    eligibility.innerText =
+      "हर महिला योजना की eligibility अलग होती है।";
+
+    documents.innerText =
+      "आवश्यक documents संबंधित योजना के अनुसार अलग हो सकते हैं।";
+
+    apply.innerText =
+      "संबंधित योजना की official government website पर current application process check करें।";
+
+    addLink(
+      "https://wcd.gov.in/",
+      "🔗 Official Women & Child Development Website"
+    );
+  }
+}
 
 function addLink(url, text) {
   const link = document.createElement("a");
