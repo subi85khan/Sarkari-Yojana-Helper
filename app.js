@@ -1,4 +1,31 @@
- if (type === "awas") {
+const search = document.getElementById("search");
+const cards = document.querySelectorAll(".card");
+
+search.addEventListener("input", function () {
+  const value = search.value.toLowerCase();
+
+  cards.forEach(function (card) {
+    const text = card.innerText.toLowerCase();
+    card.style.display = text.includes(value) ? "block" : "none";
+  });
+});
+
+function showDetails(type) {
+  const details = document.getElementById("details");
+  const yojanaList = document.getElementById("yojanaList");
+
+  const title = document.getElementById("detailsTitle");
+  const text = document.getElementById("detailsText");
+  const eligibility = document.getElementById("eligibility");
+  const documents = document.getElementById("documents");
+  const apply = document.getElementById("apply");
+
+  yojanaList.style.display = "none";
+  details.style.display = "block";
+
+  apply.innerHTML = "";
+
+  if (type === "awas") {
   title.innerText = "🏠 PM Awas Yojana";
 
   text.innerText =
@@ -17,4 +44,24 @@
     "https://pmaymis.gov.in/",
     "🔗 PM Awas Yojana Official Website"
   );
- }
+  }
+
+function addLink(url, text) {
+  const link = document.createElement("a");
+
+  link.href = url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.innerText = text;
+
+  link.style.display = "inline-block";
+  link.style.marginTop = "12px";
+  link.style.fontWeight = "bold";
+
+  document.getElementById("apply").appendChild(link);
+}
+
+function closeDetails() {
+  document.getElementById("details").style.display = "none";
+  document.getElementById("yojanaList").style.display = "block";
+}
