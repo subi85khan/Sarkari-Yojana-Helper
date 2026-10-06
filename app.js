@@ -1,14 +1,35 @@
- const search = document.getElementById("search");
+const search = document.getElementById("search");
 const cards = document.querySelectorAll(".card");
+const stateFilter = document.getElementById("stateFilter");
+const categoryFilter = document.getElementById("categoryFilter");
 
-search.addEventListener("input", function () {
-  const value = search.value.toLowerCase();
+function filterYojana() {
+  const searchValue = search.value.toLowerCase();
+  const stateValue = stateFilter.value;
+  const categoryValue = categoryFilter.value;
 
   cards.forEach(function (card) {
     const text = card.innerText.toLowerCase();
-    card.style.display = text.includes(value) ? "block" : "none";
+    const type = card.dataset.type || "";
+    const states = card.dataset.state || "";
+
+    const searchMatch = text.includes(searchValue);
+    const categoryMatch =
+      categoryValue === "" || type.includes(categoryValue);
+    const stateMatch =
+      stateValue === "" || states.includes(stateValue);
+
+    if (searchMatch && categoryMatch && stateMatch) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
   });
-});
+}
+
+search.addEventListener("input", filterYojana);
+stateFilter.addEventListener("change", filterYojana);
+categoryFilter.addEventListener("change", filterYojana);
 
 function showDetails(type) {
   const details = document.getElementById("details");
