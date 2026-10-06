@@ -109,3 +109,19 @@ h1 {
     font-size: 25px;
   }
 }
+#stateFilter,
+#categoryFilter {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: white;
+  font-size: 16px;
+  outline: none;
+}
+
+#stateFilter:focus,
+#categoryFilter:focus {
+  border-color: #2563eb;
+}
