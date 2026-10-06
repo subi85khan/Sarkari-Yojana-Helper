@@ -185,3 +185,18 @@ h1 {
   color: #64748b;
   line-height: 1.5;
 }
+.details h3 {
+  background: #f1f5f9;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.details a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.details a:hover {
+  text-decoration: underline;
+}
