@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
@@ -28,20 +28,39 @@
       <div class="card">
         <h2>🌾 PM Kisan</h2>
         <p>Kisanon se judi sarkari yojana ki jankari.</p>
-        <button>View Details</button>
+        <button onclick="showDetails('pmkisan')">View Details</button>
       </div>
 
       <div class="card">
         <h2>🏠 PM Awas Yojana</h2>
         <p>Awas se judi sarkari yojana ki jankari.</p>
-        <button>View Details</button>
+        <button onclick="showDetails('awas')">View Details</button>
       </div>
 
       <div class="card">
         <h2>👩 Mahila Yojana</h2>
         <p>Mahilaon ke liye sarkari yojanaon ki jankari.</p>
-        <button>View Details</button>
+        <button onclick="showDetails('mahila')">View Details</button>
       </div>
+
+    </div>
+
+    <div id="details" class="details" style="display:none;">
+
+      <button onclick="closeDetails()">⬅️ Back</button>
+
+      <h2 id="detailsTitle"></h2>
+
+      <p id="detailsText"></p>
+
+      <h3>👤 Eligibility</h3>
+      <p id="eligibility"></p>
+
+      <h3>📄 Required Documents</h3>
+      <p id="documents"></p>
+
+      <h3>📝 Apply Kaise Karein?</h3>
+      <p id="apply"></p>
 
     </div>
 
