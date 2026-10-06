@@ -125,3 +125,27 @@ h1 {
 #categoryFilter:focus {
   border-color: #2563eb;
 }
+.welcome-box {
+  background: white;
+  padding: 20px;
+  margin-bottom: 22px;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.welcome-box h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.welcome-box p {
+  margin-bottom: 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.section-title {
+  margin: 20px 0 15px;
+  font-size: 21px;
+}
