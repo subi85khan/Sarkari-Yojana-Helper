@@ -171,6 +171,26 @@ function showDetails(type) {
       "🔗 e-Shram Official Website"
     );
   }
+  if (type === "ration") {
+    title.innerText = "🍚 Ration Card / NFSA";
+
+    text.innerText =
+      "National Food Security Act (NFSA) के तहत eligible परिवारों को सरकारी खाद्यान्न सहायता उपलब्ध कराई जाती है।";
+
+    eligibility.innerText =
+      "Ration की eligibility और लाभ संबंधित राज्य के नियमों तथा NFSA के तहत निर्धारित criteria के अनुसार तय होते हैं।";
+
+    documents.innerText =
+      "Aadhaar, ration card से जुड़ी जानकारी और राज्य के नियमों के अनुसार आवश्यक documents मांगे जा सकते हैं।";
+
+    apply.innerText =
+      "अपने राज्य के official Food & Civil Supplies portal पर ration card और खाद्यान्न से जुड़ी सेवाओं की जानकारी प्राप्त करें।";
+
+    addLink(
+      "https://nfsa.gov.in/",
+      "🔗 NFSA Official Website"
+    );
+  }
 }
 
 function addLink(url, text) {
