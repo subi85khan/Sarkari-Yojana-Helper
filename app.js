@@ -134,20 +134,41 @@ function showDetails(type) {
     title.innerText = "🔥 PM Ujjwala Yojana";
 
     text.innerText =
-      "PM Ujjwala Yojana के तहत eligible गरीब परिवारों की 18 वर्ष या उससे अधिक उम्र की महिलाओं को deposit-free LPG connection दिया जाता है।";
+      "PM Ujjwala Yojana के तहत eligible महिलाओं को LPG connection से जुड़ी सुविधा दी जाती है।";
 
     eligibility.innerText =
-      "आवेदक महिला की उम्र कम से कम 18 वर्ष होनी चाहिए, परिवार में पहले से LPG connection नहीं होना चाहिए और परिवार PMUY के निर्धारित गरीब परिवार के criteria में होना चाहिए।";
+      "Eligibility PMUY के current government rules के अनुसार तय होती है।";
 
     documents.innerText =
-      "KYC form, Aadhaar, address proof (यदि आवश्यक हो), ration card या family composition document, adult family members के Aadhaar, bank account details और deprivation declaration।";
+      "KYC, Aadhaar, address/family details और bank account से जुड़ी आवश्यक जानकारी मांगी जा सकती है।";
 
     apply.innerText =
-      "PMUY की official website से online apply कर सकते हैं या अपनी पसंद के LPG distributor के माध्यम से आवेदन कर सकते हैं।";
+      "PMUY की official website से आवेदन और current eligibility की जानकारी प्राप्त करें।";
 
     addLink(
       "https://www.pmuy.gov.in/",
       "🔗 PM Ujjwala Yojana Official Website"
+    );
+  }
+
+  if (type === "eshram") {
+    title.innerText = "👷 e-Shram Card";
+
+    text.innerText =
+      "e-Shram Portal असंगठित क्षेत्र के श्रमिकों का National Database तैयार करने के लिए बनाया गया है।";
+
+    eligibility.innerText =
+      "असंगठित क्षेत्र में काम करने वाले eligible workers e-Shram पर registration कर सकते हैं।";
+
+    documents.innerText =
+      "Aadhaar और Aadhaar से linked mobile number की आवश्यकता होती है। Bank account details भी registration में मांगी जा सकती हैं।";
+
+    apply.innerText =
+      "Official e-Shram website पर जाकर registration और अन्य सेवाओं की जानकारी प्राप्त करें।";
+
+    addLink(
+      "https://eshram.gov.in/",
+      "🔗 e-Shram Official Website"
     );
   }
 }
@@ -170,4 +191,4 @@ function addLink(url, text) {
 function closeDetails() {
   document.getElementById("details").style.display = "none";
   document.getElementById("yojanaList").style.display = "block";
-                          }
+}
