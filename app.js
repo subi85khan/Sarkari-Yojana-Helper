@@ -108,6 +108,27 @@ function showDetails(type) {
       "🔗 Official Women & Child Development Website"
     );
   }
+
+  if (type === "ayushman") {
+    title.innerText = "🏥 Ayushman Bharat";
+
+    text.innerText =
+      "Ayushman Bharat के तहत eligible beneficiaries को सरकारी स्वास्थ्य सेवाओं और स्वास्थ्य बीमा से जुड़ी सुविधाएँ मिलती हैं।";
+
+    eligibility.innerText =
+      "Eligibility संबंधित सरकारी database और current scheme rules के अनुसार तय होती है।";
+
+    documents.innerText =
+      "Aadhaar और scheme में मांगी गई आवश्यक जानकारी/दस्तावेज।";
+
+    apply.innerText =
+      "Ayushman Bharat की official website पर अपनी eligibility और उपलब्ध सुविधाओं की जानकारी check करें।";
+
+    addLink(
+      "https://pmjay.gov.in/",
+      "🔗 Ayushman Bharat Official Website"
+    );
+  }
 }
 
 function addLink(url, text) {
