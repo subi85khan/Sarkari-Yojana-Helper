@@ -210,7 +210,8 @@ function showDetails(type) {
       "https://scholarships.gov.in/",
       "🔗 National Scholarship Portal"
     );
-  }}
+  }
+}
 
 function addLink(url, text) {
   const link = document.createElement("a");
