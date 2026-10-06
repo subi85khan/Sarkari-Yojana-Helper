@@ -129,6 +129,27 @@ function showDetails(type) {
       "🔗 Ayushman Bharat Official Website"
     );
   }
+
+  if (type === "ujjwala") {
+    title.innerText = "🔥 PM Ujjwala Yojana";
+
+    text.innerText =
+      "PM Ujjwala Yojana के तहत eligible गरीब परिवारों की 18 वर्ष या उससे अधिक उम्र की महिलाओं को deposit-free LPG connection दिया जाता है।";
+
+    eligibility.innerText =
+      "आवेदक महिला की उम्र कम से कम 18 वर्ष होनी चाहिए, परिवार में पहले से LPG connection नहीं होना चाहिए और परिवार PMUY के निर्धारित गरीब परिवार के criteria में होना चाहिए।";
+
+    documents.innerText =
+      "KYC form, Aadhaar, address proof (यदि आवश्यक हो), ration card या family composition document, adult family members के Aadhaar, bank account details और deprivation declaration।";
+
+    apply.innerText =
+      "PMUY की official website से online apply कर सकते हैं या अपनी पसंद के LPG distributor के माध्यम से आवेदन कर सकते हैं।";
+
+    addLink(
+      "https://www.pmuy.gov.in/",
+      "🔗 PM Ujjwala Yojana Official Website"
+    );
+  }
 }
 
 function addLink(url, text) {
@@ -149,4 +170,4 @@ function addLink(url, text) {
 function closeDetails() {
   document.getElementById("details").style.display = "none";
   document.getElementById("yojanaList").style.display = "block";
-}
+                          }
