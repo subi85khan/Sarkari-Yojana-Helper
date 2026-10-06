@@ -7,11 +7,7 @@ search.addEventListener("input", function () {
   cards.forEach(function (card) {
     const text = card.innerText.toLowerCase();
 
-    if (text.includes(value)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
+    card.style.display = text.includes(value) ? "block" : "none";
   });
 });
 
@@ -29,27 +25,61 @@ function showDetails(type) {
   details.style.display = "block";
 
   if (type === "pmkisan") {
-    title.innerText = "🌾 PM Kisan";
-    text.innerText = "PM Kisan ek kendriya yojana hai jo eligible landholding farmer families ko financial support provide karti hai.";
-    eligibility.innerText = "Eligible landholding farmer families, scheme ke official rules ke according.";
-    documents.innerText = "Aadhaar, bank account details aur land-related documents ki zarurat ho sakti hai.";
-    apply.innerText = "Official PM Kisan portal par jaakar registration aur application process check karein.";
+    title.innerText = "🌾 PM Kisan Samman Nidhi";
+
+    text.innerText =
+      "PM-KISAN के तहत eligible landholding farmer families को ₹6,000 प्रति वर्ष 3 बराबर किस्तों में Direct Benefit Transfer (DBT) के जरिए दिया जाता है।";
+
+    eligibility.innerText =
+      "Eligible landholding farmer families scheme के नियमों के अनुसार लाभ ले सकती हैं। कुछ categories को scheme से बाहर रखा गया है।";
+
+    documents.innerText =
+      "Aadhaar और bank account details सहित scheme में मांगी गई आवश्यक जानकारी/दस्तावेज जरूरी हो सकते हैं।";
+
+    apply.innerText =
+      "Official PM-KISAN website पर New Farmer Registration से registration किया जा सकता है। Registered farmers के लिए e-KYC mandatory है।";
+
+    const officialLink = document.createElement("a");
+    officialLink.href = "https://pmkisan.gov.in/";
+    officialLink.target = "_blank";
+    officialLink.rel = "noopener noreferrer";
+    officialLink.innerText = "🔗 Official PM-Kisan Website";
+
+    apply.appendChild(document.createElement("br"));
+    apply.appendChild(document.createElement("br"));
+    apply.appendChild(officialLink);
   }
 
   if (type === "awas") {
     title.innerText = "🏠 PM Awas Yojana";
-    text.innerText = "PM Awas Yojana eligible beneficiaries ko housing support dene ke liye government scheme hai.";
-    eligibility.innerText = "Eligibility scheme ke current rules aur beneficiary category par depend karti hai.";
-    documents.innerText = "Aadhaar, address proof, bank details aur anya required documents.";
-    apply.innerText = "Official government portal par eligibility aur application process check karein.";
+
+    text.innerText =
+      "PM Awas Yojana के अंतर्गत eligible beneficiaries के लिए housing support से जुड़ी सरकारी सहायता उपलब्ध है।";
+
+    eligibility.innerText =
+      "Eligibility संबंधित PM Awas Yojana और beneficiary category के current government rules पर depend करती है।";
+
+    documents.innerText =
+      "आवश्यक documents संबंधित योजना और आवेदन प्रक्रिया के अनुसार अलग हो सकते हैं।";
+
+    apply.innerText =
+      "Official government portal पर current eligibility और application process check करें।";
   }
 
   if (type === "mahila") {
-    title.innerText = "👩 Mahila Yojana";
-    text.innerText = "Mahilaon ke liye alag-alag government schemes available hain.";
-    eligibility.innerText = "Har yojana ki eligibility alag hoti hai.";
-    documents.innerText = "Aadhaar, bank account aur scheme ke according anya documents.";
-    apply.innerText = "Jis specific mahila yojana ke liye apply karna ho, uski official website par process check karein.";
+    title.innerText = "👩 महिला योजनाएँ";
+
+    text.innerText =
+      "महिलाओं के लिए केंद्र और राज्य सरकार की अलग-अलग योजनाएँ उपलब्ध हैं।";
+
+    eligibility.innerText =
+      "हर महिला योजना की eligibility अलग होती है।";
+
+    documents.innerText =
+      "आवश्यक documents संबंधित योजना के अनुसार अलग हो सकते हैं।";
+
+    apply.innerText =
+      "जिस specific महिला योजना के लिए आवेदन करना हो, उसकी official government website पर current process check करें।";
   }
 }
 
