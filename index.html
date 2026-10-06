@@ -16,15 +16,17 @@
     <p class="subtitle">
       Sarkari yojanaon ki jankari ek hi jagah
     </p>
-<div class="welcome-box">
-  <h2>🙏 Swagat Hai!</h2>
-  <p>
-    Sarkari yojanaon ki jankari, eligibility,
-    documents aur official links ek hi jagah.
-  </p>
-</div>
 
-<h2 class="section-title">⭐ Popular Yojana</h2>
+    <div class="welcome-box">
+      <h2>🙏 Swagat Hai!</h2>
+      <p>
+        Sarkari yojanaon ki jankari, eligibility,
+        documents aur official links ek hi jagah.
+      </p>
+    </div>
+
+    <h2 class="section-title">⭐ Popular Yojana</h2>
+
     <input
       type="text"
       id="search"
@@ -49,21 +51,23 @@
       <option value="awas">🏠 Awas</option>
       <option value="health">🏥 Health</option>
     </select>
-<div class="updates-box">
 
-  <h2>🔔 Latest Updates</h2>
+    <div class="updates-box">
 
-  <div class="update-item">
-    <strong>📢 Sarkari Yojana Updates</strong>
-    <p>Latest government scheme updates yahan milengi.</p>
-  </div>
+      <h2>🔔 Latest Updates</h2>
 
-  <div class="update-item">
-    <strong>📅 Important Dates</strong>
-    <p>Application aur important dates ki jankari yahan milegi.</p>
-  </div>
+      <div class="update-item">
+        <strong>📢 Sarkari Yojana Updates</strong>
+        <p>Latest government scheme updates yahan milengi.</p>
+      </div>
 
-</div>
+      <div class="update-item">
+        <strong>📅 Important Dates</strong>
+        <p>Application aur important dates ki jankari yahan milegi.</p>
+      </div>
+
+    </div>
+
     <div id="yojanaList">
 
       <div
@@ -78,43 +82,41 @@
         </button>
       </div>
 
-    <div id="yojanaList">
+      <div
+        class="card"
+        data-type="awas"
+        data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
+      >
+        <h2>🏠 PM Awas Yojana</h2>
+        <p>Awas se judi sarkari yojana ki jankari.</p>
+        <button onclick="showDetails('awas')">
+          View Details
+        </button>
+      </div>
 
-  <div
-    class="card"
-    data-type="awas"
-    data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
-  >
-    <h2>🏠 PM Awas Yojana</h2>
-    <p>Awas se judi sarkari yojana ki jankari.</p>
-    <button onclick="showDetails('awas')">
-      View Details
-    </button>
-  </div>
+      <div
+        class="card"
+        data-type="mahila"
+        data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
+      >
+        <h2>👩 Mahila Yojana</h2>
+        <p>Mahilaon ke liye sarkari yojanaon ki jankari.</p>
+        <button onclick="showDetails('mahila')">
+          View Details
+        </button>
+      </div>
 
-  <div
-    class="card"
-    data-type="mahila"
-    data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
-  >
-    <h2>👩 Mahila Yojana</h2>
-    <p>Mahilaon ke liye sarkari yojanaon ki jankari.</p>
-    <button onclick="showDetails('mahila')">
-      View Details
-    </button>
-  </div>
-
-  <div
-    class="card"
-    data-type="health"
-    data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
-  >
-    <h2>🏥 Ayushman Bharat</h2>
-    <p>इलाज और स्वास्थ्य से जुड़ी सरकारी योजना की जानकारी।</p>
-    <button onclick="showDetails('ayushman')">
-      View Details
-    </button>
-  </div>
+      <div
+        class="card"
+        data-type="health"
+        data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
+      >
+        <h2>🏥 Ayushman Bharat</h2>
+        <p>इलाज और स्वास्थ्य से जुड़ी सरकारी योजना की जानकारी।</p>
+        <button onclick="showDetails('ayushman')">
+          View Details
+        </button>
+      </div>
 
     </div>
 
