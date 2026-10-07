@@ -45,7 +45,14 @@ function showDetails(type) {
   details.style.display = "block";
 
   apply.innerHTML = "";
+const shareButton = document.createElement("button");
+shareButton.innerText = "🟢 WhatsApp पर Share";
+shareButton.className = "apply-btn";
+shareButton.style.border = "none";
+shareButton.style.cursor = "pointer";
+shareButton.onclick = addWhatsAppShare;
 
+apply.appendChild(shareButton);
   if (type === "pmkisan") {
     title.innerText = "🌾 PM Kisan Samman Nidhi";
 
