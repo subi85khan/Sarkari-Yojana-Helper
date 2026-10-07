@@ -220,7 +220,7 @@ function addLink(url, text) {
   link.target = "_blank";
   link.rel = "noopener noreferrer";
   link.innerText = text;
-
+link.className = "apply-btn";
   link.style.display = "inline-block";
   link.style.marginTop = "12px";
   link.style.fontWeight = "bold";
