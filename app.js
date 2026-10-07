@@ -240,3 +240,16 @@ function selectCategory(category) {
     behavior: "smooth"
   });
 }
+function showUpdate(type) {
+  if (type === "new") {
+    alert("📢 नई सरकारी योजना की जानकारी जल्द यहाँ अपडेट की जाएगी।");
+  }
+
+  if (type === "date") {
+    alert("📅 आवेदन करने से पहले योजना की अंतिम तारीख जरूर जांचें।");
+  }
+
+  if (type === "documents") {
+    alert("📄 आवेदन से पहले Aadhaar, Bank Account और जरूरी documents तैयार रखें।");
+  }
+}
