@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
@@ -55,130 +55,98 @@
     <div class="updates-box">
 
       <h2>🔔 Latest Updates</h2>
-<div class="update-item">
-  <strong>📢 नई सरकारी योजना की जानकारी</strong>
-  <p>सरकारी योजनाओं की नई जानकारी और महत्वपूर्ण अपडेट यहाँ देखें।</p>
-</div>
 
-<div class="update-item">
-  <strong>📅 आवेदन की महत्वपूर्ण तारीख</strong>
-  <p>योजना का आवेदन करने से पहले अंतिम तारीख और पात्रता जरूर जांचें।</p>
-</div>
-
-<div class="update-item">
-  <strong>📄 जरूरी Documents</strong>
-  <p>आवेदन करने से पहले Aadhaar, income certificate और अन्य जरूरी documents तैयार रखें।</p>
-</div>
       <div class="update-item">
-        <strong>📢 Sarkari Yojana Updates</strong>
-        <p>Latest government scheme updates yahan milengi.</p>
+        <strong>📢 नई सरकारी योजना की जानकारी</strong>
+        <p>सरकारी योजनाओं की नई जानकारी और महत्वपूर्ण अपडेट यहाँ देखें।</p>
       </div>
 
       <div class="update-item">
-        <strong>📅 Important Dates</strong>
-        <p>Application aur important dates ki jankari yahan milegi.</p>
+        <strong>📅 आवेदन की महत्वपूर्ण तारीख</strong>
+        <p>योजना का आवेदन करने से पहले अंतिम तारीख और पात्रता जरूर जांचें।</p>
+      </div>
+
+      <div class="update-item">
+        <strong>📄 जरूरी Documents</strong>
+        <p>आवेदन करने से पहले जरूरी documents तैयार रखें।</p>
       </div>
 
     </div>
 
     <div id="yojanaList">
 
-      <div
-        class="card"
-        data-type="kisan"
-        data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
-      >
+      <div class="card" data-type="kisan" data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi">
         <h2>🌾 PM Kisan</h2>
         <p>Kisanon se judi sarkari yojana ki jankari.</p>
-        <button onclick="showDetails('pmkisan')">
-          View Details
-        </button>
+        <button onclick="showDetails('pmkisan')">View Details</button>
       </div>
 
-      <div
-        class="card"
-        data-type="awas"
-        data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
-      >
+      <div class="card" data-type="awas" data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi">
         <h2>🏠 PM Awas Yojana</h2>
         <p>Awas se judi sarkari yojana ki jankari.</p>
-        <button onclick="showDetails('awas')">
-          View Details
-        </button>
+        <button onclick="showDetails('awas')">View Details</button>
       </div>
 
-      <div
-        class="card"
-        data-type="mahila"
-        data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
-      >
+      <div class="card" data-type="mahila" data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi">
         <h2>👩 Mahila Yojana</h2>
         <p>Mahilaon ke liye sarkari yojanaon ki jankari.</p>
-        <button onclick="showDetails('mahila')">
-          View Details
-        </button>
+        <button onclick="showDetails('mahila')">View Details</button>
       </div>
 
-      <div
-        class="card"
-        data-type="health"
-        data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
-      >
+      <div class="card" data-type="health" data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi">
         <h2>🏥 Ayushman Bharat</h2>
         <p>इलाज और स्वास्थ्य से जुड़ी सरकारी योजना की जानकारी।</p>
-        <button onclick="showDetails('ayushman')">
-          View Details
-        </button>
+        <button onclick="showDetails('ayushman')">View Details</button>
       </div>
 
-      <div
-        class="card"
-        data-type="mahila"
-        data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
-      >
+      <div class="card" data-type="mahila" data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi">
         <h2>🔥 PM Ujjwala Yojana</h2>
         <p>महिलाओं के लिए LPG connection से जुड़ी सरकारी योजना।</p>
-        <button onclick="showDetails('ujjwala')">
-          View Details
-        </button>
+        <button onclick="showDetails('ujjwala')">View Details</button>
+      </div>
+
+      <div class="card" data-type="rojgar" data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi">
+        <h2>👷 e-Shram Card</h2>
+        <p>असंगठित क्षेत्र के श्रमिकों के लिए e-Shram की जानकारी।</p>
+        <button onclick="showDetails('eshram')">View Details</button>
+      </div>
+
+      <div class="card" data-type="rojgar" data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi">
+        <h2>🍚 Ration Card / NFSA</h2>
+        <p>Ration card aur सरकारी खाद्यान्न योजना की जानकारी।</p>
+        <button onclick="showDetails('ration')">View Details</button>
+      </div>
+
+      <div class="card" data-type="student" data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi">
+        <h2>🎓 Student Scholarship</h2>
+        <p>Students ke liye scholarship aur education schemes ki jankari.</p>
+        <button onclick="showDetails('scholarship')">View Details</button>
       </div>
 
     </div>
-      <!-- Yahan e-Shram card paste karein -->
-      <div
-        class="card"
-        data-type="rojgar"
-        data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
-      >
-        <h2>👷 e-Shram Card</h2>
-        <p>असंगठित क्षेत्र के श्रमिकों के लिए e-Shram की जानकारी।</p>
-        <button onclick="showDetails('eshram')">
-          View Details
-        </button>
-      </div>
-    <div
-  class="card"
-  data-type="rojgar"
-  data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
->
-  <h2>🍚 Ration Card / NFSA</h2>
-  <p>Ration card aur सरकारी खाद्यान्न योजना की जानकारी।</p>
-  <button onclick="showDetails('ration')">
-    View Details
-  </button>
-</div>
 
-<div
-  class="card"
-  data-type="student"
-  data-state="uttar-pradesh,bihar,jharkhand,rajasthan,delhi"
->
-  <h2>🎓 Student Scholarship</h2>
-  <p>Students ke liye scholarship aur education schemes ki jankari.</p>
-  <button onclick="showDetails('scholarship')">
-    View Details
-  </button>
-</div>
+    <div class="updates-box">
+
+      <h2>📞 Help & Important Links</h2>
+
+      <div class="update-item">
+        <strong>🌐 National Scholarship Portal</strong>
+        <p>Student scholarship की जानकारी और आवेदन के लिए official portal देखें।</p>
+        <a href="https://scholarships.gov.in/" target="_blank">
+          🔗 Official Website
+        </a>
+      </div>
+
+      <div class="update-item">
+        <strong>🇮🇳 National Government Portal</strong>
+        <p>केंद्र सरकार की official services और जानकारी के लिए portal देखें।</p>
+        <a href="https://www.india.gov.in/" target="_blank">
+          🔗 India.gov.in
+        </a>
+      </div>
+
+    </div>
+
     <div id="details" class="details" style="display:none;">
 
       <button onclick="closeDetails()">⬅️ Back</button>
