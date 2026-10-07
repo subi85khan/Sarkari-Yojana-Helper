@@ -247,7 +247,15 @@ h1 {
   border-radius: 12px;
   border-left: 4px solid #2563eb;
 }
+.details-box strong {
+  color: #0f172a;
+  font-size: 17px;
+}
 
+.details-box p {
+  margin: 0;
+  line-height: 1.6;
+}
 .details-box strong {
   display: block;
   margin-bottom: 6px;
