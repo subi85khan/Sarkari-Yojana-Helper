@@ -62,9 +62,9 @@ function showDetails(type) {
       "Official PM-KISAN website पर New Farmer Registration और e-KYC की सुविधा उपलब्ध है।";
 
     addLink(
-      "https://pmkisan.gov.in/",
-      "🔗 PM Kisan Official Website"
-    );
+  "https://pmkisan.gov.in/",
+  "📝 Apply Now"
+);
   }
 
   if (type === "awas") {
