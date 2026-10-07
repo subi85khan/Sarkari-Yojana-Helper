@@ -267,3 +267,18 @@ h1 {
   color: #475569;
   line-height: 1.5;
 }
+.apply-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #16a34a;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.apply-btn:hover {
+  background: #15803d;
+}
