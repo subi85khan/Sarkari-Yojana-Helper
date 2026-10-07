@@ -62,9 +62,9 @@ function showDetails(type) {
       "Official PM-KISAN website पर New Farmer Registration और e-KYC की सुविधा उपलब्ध है।";
 
     addLink(
-  "https://pmkisan.gov.in/",
-  "📝 Apply Now"
-);
+      "https://pmkisan.gov.in/",
+      "📝 Apply Now"
+    );
   }
 
   if (type === "awas") {
@@ -83,9 +83,9 @@ function showDetails(type) {
       "Official PMAY-U website पर eligibility और application process check करें।";
 
     addLink(
-  "https://pmaymis.gov.in/",
-  "📝 Apply Now"
-);
+      "https://pmaymis.gov.in/",
+      "📝 Apply Now"
+    );
   }
 
   if (type === "mahila") {
@@ -110,25 +110,24 @@ function showDetails(type) {
   }
 
   if (type === "ayushman") {
-  title.innerText = "🏥 Ayushman Bharat";
+    title.innerText = "🏥 Ayushman Bharat";
 
-  text.innerText =
-    "Ayushman Bharat के तहत eligible beneficiaries को सरकारी स्वास्थ्य सेवाओं और स्वास्थ्य बीमा से जुड़ी सुविधाएँ मिलती हैं।";
+    text.innerText =
+      "Ayushman Bharat के तहत eligible beneficiaries को सरकारी स्वास्थ्य सेवाओं और स्वास्थ्य बीमा से जुड़ी सुविधाएँ मिलती हैं।";
 
-  eligibility.innerText =
-    "Eligibility संबंधित सरकारी database और current scheme rules के अनुसार तय होती है।";
+    eligibility.innerText =
+      "Eligibility संबंधित सरकारी database और current scheme rules के अनुसार तय होती है।";
 
-  documents.innerText =
-    "Aadhaar और scheme में मांगी गई आवश्यक जानकारी/दस्तावेज।";
+    documents.innerText =
+      "Aadhaar और scheme में मांगी गई आवश्यक जानकारी/दस्तावेज।";
 
-  apply.innerText =
-    "Ayushman Bharat की official website पर अपनी eligibility और उपलब्ध सुविधाओं की जानकारी check करें।";
+    apply.innerText =
+      "Ayushman Bharat की official website पर अपनी eligibility और उपलब्ध सुविधाओं की जानकारी check करें।";
 
-  addLink(
-    "https://pmjay.gov.in/",
-    "📝 Apply Now"
-  );
-  }
+    addLink(
+      "https://pmjay.gov.in/",
+      "📝 Apply Now"
+    );
   }
 
   if (type === "ujjwala") {
@@ -172,6 +171,7 @@ function showDetails(type) {
       "🔗 e-Shram Official Website"
     );
   }
+
   if (type === "ration") {
     title.innerText = "🍚 Ration Card / NFSA";
 
@@ -192,6 +192,7 @@ function showDetails(type) {
       "🔗 NFSA Official Website"
     );
   }
+
   if (type === "scholarship") {
     title.innerText = "🎓 Student Scholarship";
 
@@ -221,7 +222,8 @@ function addLink(url, text) {
   link.target = "_blank";
   link.rel = "noopener noreferrer";
   link.innerText = text;
-link.className = "apply-btn";
+  link.className = "apply-btn";
+
   link.style.display = "inline-block";
   link.style.marginTop = "12px";
   link.style.fontWeight = "bold";
@@ -233,6 +235,7 @@ function closeDetails() {
   document.getElementById("details").style.display = "none";
   document.getElementById("yojanaList").style.display = "block";
 }
+
 function selectCategory(category) {
   categoryFilter.value = category;
   filterYojana();
@@ -241,6 +244,7 @@ function selectCategory(category) {
     behavior: "smooth"
   });
 }
+
 function showUpdate(type) {
   if (type === "new") {
     alert("📢 नई सरकारी योजना की जानकारी जल्द यहाँ अपडेट की जाएगी।");
