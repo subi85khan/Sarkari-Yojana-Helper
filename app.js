@@ -220,6 +220,26 @@ apply.appendChild(shareButton);
       "🔗 National Scholarship Portal"
     );
   }
+if (type === "mudra") {
+  title.innerText = "💼 PM Mudra Yojana";
+
+  text.innerText =
+    "PM Mudra Yojana के तहत छोटे कारोबार और स्वरोजगार से जुड़े eligible applicants को micro enterprise activities के लिए ऋण की सुविधा उपलब्ध है।";
+
+  eligibility.innerText =
+    "Eligibility और loan terms संबंधित bank/NBFC और current government rules के अनुसार तय होते हैं।";
+
+  documents.innerText =
+    "आवश्यक documents lender और applicant की स्थिति के अनुसार अलग हो सकते हैं।";
+
+  apply.innerText =
+    "PM Mudra Yojana की official information के लिए सरकारी वेबसाइट पर current details और application process check करें।";
+
+  addLink(
+    "https://www.mudra.org.in/",
+    "🔗 PM Mudra Yojana Official Website"
+  );
+}
 }
 
 function addWhatsAppShare() {
