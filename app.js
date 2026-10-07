@@ -216,6 +216,20 @@ function showDetails(type) {
 }
 
 function addLink(url, text) {
+  function addWhatsAppShare() {
+  const title = document.getElementById("detailsTitle").innerText;
+  const text = document.getElementById("detailsText").innerText;
+
+  const message =
+    "📢 " + title + "\n\n" +
+    text +
+    "\n\n🔗 Sarkari Yojana Helper";
+
+  const whatsappUrl =
+    "https://wa.me/?text=" + encodeURIComponent(message);
+
+  window.open(whatsappUrl, "_blank");
+  }
   const link = document.createElement("a");
 
   link.href = url;
