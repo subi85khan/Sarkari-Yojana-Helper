@@ -232,3 +232,11 @@ function closeDetails() {
   document.getElementById("details").style.display = "none";
   document.getElementById("yojanaList").style.display = "block";
 }
+function selectCategory(category) {
+  categoryFilter.value = category;
+  filterYojana();
+
+  document.getElementById("yojanaList").scrollIntoView({
+    behavior: "smooth"
+  });
+}
