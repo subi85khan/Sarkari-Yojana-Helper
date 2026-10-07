@@ -222,8 +222,7 @@ apply.appendChild(shareButton);
   }
 }
 
-function addLink(url, text) {
-  function addWhatsAppShare() {
+function addWhatsAppShare() {
   const title = document.getElementById("detailsTitle").innerText;
   const text = document.getElementById("detailsText").innerText;
 
@@ -236,7 +235,9 @@ function addLink(url, text) {
     "https://wa.me/?text=" + encodeURIComponent(message);
 
   window.open(whatsappUrl, "_blank");
-  }
+}
+
+function addLink(url, text) {
   const link = document.createElement("a");
 
   link.href = url;
