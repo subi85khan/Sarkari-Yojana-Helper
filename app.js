@@ -125,9 +125,9 @@ function showDetails(type) {
       "Ayushman Bharat की official website पर अपनी eligibility और उपलब्ध सुविधाओं की जानकारी check करें।";
 
     addLink(
-      "https://pmjay.gov.in/",
-      "🔗 Ayushman Bharat Official Website"
-    );
+  "https://pmjay.gov.in/",
+  "📝 Apply Now"
+);
   }
 
   if (type === "ujjwala") {
