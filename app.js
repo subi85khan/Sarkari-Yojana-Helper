@@ -83,9 +83,9 @@ function showDetails(type) {
       "Official PMAY-U website पर eligibility और application process check करें।";
 
     addLink(
-      "https://pmaymis.gov.in/",
-      "🔗 PM Awas Yojana Official Website"
-    );
+  "https://pmaymis.gov.in/",
+  "📝 Apply Now"
+);
   }
 
   if (type === "mahila") {
