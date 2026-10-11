@@ -282,3 +282,16 @@ h1 {
 .apply-btn:hover {
   background: #15803d;
 }
+.site-logo {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.site-logo img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
